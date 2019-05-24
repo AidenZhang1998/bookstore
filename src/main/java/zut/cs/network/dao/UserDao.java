@@ -8,7 +8,8 @@ import java.sql.SQLException;
 
 
 public class UserDao {
-    public void AddUser(User user)throws SQLException
+    // 添加用户
+    public void addUser(User user)throws SQLException
     {
         String sql="insert into user(username,password,gender,email,telephone,introduce,activecode) values (?,?,?,?,?,?,?)";
 QueryRunner runner =new QueryRunner(DataSourceUtils.getDataSource());

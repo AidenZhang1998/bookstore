@@ -14,6 +14,7 @@ public class UserDaoTest {
     }
 
     @Test
+    //测试根据激活码修改用户激活状态
     public void findUserByActiveCode() {
         User user =new User();
         user.setActiveCode("1");
